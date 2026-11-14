@@ -1,0 +1,29 @@
+#!/bin/sh
+# SPDX-License-Identifier: GPL-2.0-only
+# PROBE ONLY: not a production bootstrap, installer or handoff implementation.
+export PATH=/bin:/sbin
+export HOME=/
+export TERM=vt100
+umask 077
+
+mount -n -t proc proc /proc
+mount -n -t sysfs sysfs /sys
+mount -n -t tmpfs -o mode=0755,nosuid tmpfs /dev
+mknod -m 600 /dev/console c 5 1
+mknod -m 666 /dev/null c 1 3
+exec </dev/console >/dev/console 2>&1
+mount -n -t tmpfs -o mode=0700,nosuid,nodev tmpfs /tmp
+
+echo 'Beacon10 stock Linux bootstrap probe; no QSDK jump or installation enabled.'
+if [ "$(uname -r)" = 5.4.164 ] &&
+   (cd / && sha256sum -c /etc/probe.sha256) &&
+   insmod /lib/modules/5.4.164/beacon10-handoff-probe.ko; then
+	echo 'Read-only module probe loaded. This does not prove a kernel handoff.'
+else
+	echo 'Probe failed; leaving all eMMC partitions unchanged.'
+fi
+echo 'Stopping in local diagnostic shell. No automatic reboot, migration or firmware writes.'
+while :; do
+	/bin/sh
+	sleep 1
+done

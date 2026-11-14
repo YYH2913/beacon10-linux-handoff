@@ -1,0 +1,191 @@
+{
+  "source": "owner-maintained Beacon10 sender-side implementation",
+  "source_revision": "1105d6326aa8d39f714136932a5000504a3a3a46",
+  "import_is_a_source_snapshot_not_a_new_hardware_validation": true,
+  "original_QSDK_checkout_modified": false,
+  "omitted": [
+    "target-kernel receiver patches",
+    "power-adopt.c",
+    "root-enter.c",
+    "beacon10-board/fstools receiver implementation",
+    "OEM binaries",
+    "device-specific identity/key/log files",
+    "private live-install authorizations"
+  ],
+  "files": [
+    {
+      "path": "tools/beacon10/build-stock-probe.py",
+      "import_sha256": "8d38baec2fecea04f0b2ab9dc52ee4f0198ebc4cfc2cb050136ba6c948cb0a77"
+    },
+    {
+      "path": "tools/beacon10/stock-kernel-profile.py",
+      "import_sha256": "7657988f47a40e75b1b42f59d7020e8005fdd718608c3e4b395a508977da9a89"
+    },
+    {
+      "path": "tools/beacon10/stock-linux-gpt.py",
+      "import_sha256": "cdf9126b4837a6c0f6d550ca31b01b2e2195e33a86a0ef7cd37b32bacf403114"
+    },
+    {
+      "path": "tools/beacon10/build-bootstrap-probe.py",
+      "import_sha256": "f42724375bebb0198ff35fc92b75662870e7cf443c4d8be8897f2317b688c348"
+    },
+    {
+      "path": "tools/beacon10/build-handoff-bootstrap.py",
+      "import_sha256": "bfbcf166a3055a6105caeff65caee628f17df8a4a2e0640149ba5a38ab87fdd5"
+    },
+    {
+      "path": "tools/beacon10/build-handoff-payload.py",
+      "import_sha256": "9f3fc50e65dfe139699cc0f952462e1b83d9fd9157b63d3fd3ebf96f33e57cc4"
+    },
+    {
+      "path": "tools/beacon10/build-install-bundle.py",
+      "import_sha256": "fe9d1373978d5455a85019e1acecc768212da42041698e829ab8f3eb19b5eaa6"
+    },
+    {
+      "path": "tools/beacon10/build-ram-installer.py",
+      "import_sha256": "2a2cb42d3cd69ede8c34521ce554f0362bb1d938510fc8f1558126dc85458602"
+    },
+    {
+      "path": "tools/beacon10/check-busybox.py",
+      "import_sha256": "fdeb150d1cc03cb331db262382d9db488e787063dff600ccb98fb7d831910039"
+    },
+    {
+      "path": "tools/beacon10/storage-layout.py",
+      "import_sha256": "7338cbd033b3b7c7f4f5178363421f268e23a607242430b48a353a9fa6449b33"
+    },
+    {
+      "path": "tools/beacon10/layout.json",
+      "import_sha256": "ca3b6aa8e5091162ee99a9b9ab78af19b01794d0d7658abbc308a22e79943007"
+    },
+    {
+      "path": "tools/beacon10/stock-linux-probe/Makefile",
+      "import_sha256": "6a765c1816ffa27f5e51fe33791ca5ceed6fe6e279233b3dc551bc55bdf76246"
+    },
+    {
+      "path": "tools/beacon10/stock-linux-probe/probe.c",
+      "import_sha256": "4ccd0f3c252eca2a254f56bfdca3e46b965f54778d43565935af49921a02ccab"
+    },
+    {
+      "path": "tools/beacon10/bootstrap-probe/init",
+      "import_sha256": "90c1b5aa4a1c73cedf7f48c50bd150d501d7f66983d9df78c8c5872ab4ce112c"
+    },
+    {
+      "path": "tools/beacon10/diagnostics/stock-rpm-profile.py",
+      "import_sha256": "2a7cd01bdb7cb295067c37b60695bd66ac57af0ff757319854f918d4abc0d178"
+    },
+    {
+      "path": "tools/beacon10/diagnostics/rpm-power-format.h",
+      "import_sha256": "80d6ef7dab426790d8da826e1f1d860e69db5b4560cbd703434f050de4f9080f"
+    },
+    {
+      "path": "tools/beacon10/handoff/Makefile",
+      "import_sha256": "28776ed356b9c027f6f953128c5e74f351f89714667edc5f8228f228964485dc"
+    },
+    {
+      "path": "tools/beacon10/handoff/boot-format.h",
+      "import_sha256": "81f4f4b3f02d658e8d5cf7e33e2c656d591b4a36490e0dd16e8abcad21cb3980"
+    },
+    {
+      "path": "tools/beacon10/handoff/drain-main.c",
+      "import_sha256": "6600bef00709b7c4fc5e165685e992fdb5b7a44cafc59b35d64d32ecbd8eae20"
+    },
+    {
+      "path": "tools/beacon10/handoff/factory-generated.h",
+      "import_sha256": "4bcffe63a0cc0459ad1b2442965d34356bd6e21ca11b5a41b227a441ed92edbf"
+    },
+    {
+      "path": "tools/beacon10/handoff/format.c",
+      "import_sha256": "c4d7dc4c11f3141ec74643da9c46669dbc680a5c534a07fb50640e2fe26a29bc"
+    },
+    {
+      "path": "tools/beacon10/handoff/format.h",
+      "import_sha256": "62396da7ccfd94f5c329283dff92301252e8e1f402ecddf145c591935c5208f3"
+    },
+    {
+      "path": "tools/beacon10/handoff/install-format.h",
+      "import_sha256": "4126bedbbf52d8ea3d4ccdac82249ebfce8e7869ac8f110631d59303d92b102f"
+    },
+    {
+      "path": "tools/beacon10/handoff/install-main.c",
+      "import_sha256": "ed91e1d8c9d01134c0262d62a60ca3b7bd0e4615dd93f99e62165de5f6236f28"
+    },
+    {
+      "path": "tools/beacon10/handoff/install.c",
+      "import_sha256": "9a8f0ec3a8fdce89b0b4eadfb64ad49870ff63ed4b2332081e391b958a0817f3"
+    },
+    {
+      "path": "tools/beacon10/handoff/jump.c",
+      "import_sha256": "a6b3be5c7c1d75cfadbef25c8267f75b9ace6c76380480770f6a413ef4b610ba"
+    },
+    {
+      "path": "tools/beacon10/handoff/layout-generated.h",
+      "import_sha256": "de9b485ef5801d2200427b8e43a3c97f0953ceb326b3579fafed45dbc666534e"
+    },
+    {
+      "path": "tools/beacon10/handoff/loader.c",
+      "import_sha256": "1c39a43f1c8f8ed64520ad35494fa9360733876a1f224094b050b9f42ecef7e8"
+    },
+    {
+      "path": "tools/beacon10/handoff/module.c",
+      "import_sha256": "81bd9b707ea87e047411ecee416ff96c893abf7619e1e996d600fb021cc9d28a"
+    },
+    {
+      "path": "tools/beacon10/handoff/mounts.c",
+      "import_sha256": "ff6f0704bb2a34b1258207fd7e1ec1d6b0b63243706374fa5934601b986a596f"
+    },
+    {
+      "path": "tools/beacon10/handoff/mounts.h",
+      "import_sha256": "fa587f509e4ecb67acd2c67c81054772c5b3d1332daeeca98f8942fd5089c47d"
+    },
+    {
+      "path": "tools/beacon10/handoff/ram-init.c",
+      "import_sha256": "cc13f0b8ee937796019f249b5190984cbb7a4b00071461e145e73c7c2bd3b2b6"
+    },
+    {
+      "path": "tools/beacon10/handoff/rpm-power-format.h",
+      "import_sha256": "3e9a633a426329f201f35d3a5ac567e9184d64e6c78ccf99e1bdca45c73ad045"
+    },
+    {
+      "path": "tools/beacon10/handoff/sha256.c",
+      "import_sha256": "5be193d324c0490e925913764d190d14575cd964c01bd293c40d6d53c1e897f1"
+    },
+    {
+      "path": "tools/beacon10/handoff/sha256.h",
+      "import_sha256": "14af3840cc32d9bf30547974d28a95c551ef0bd89f002a9bc25f3276e005f9a5"
+    },
+    {
+      "path": "tools/beacon10/handoff/stage-status.c",
+      "import_sha256": "b8999f7d7caf958a6c465759d8d8c1c353fb0ec6a61edc3939d55af59b9a24f9"
+    },
+    {
+      "path": "tools/beacon10/handoff/stock-power-snapshot.h",
+      "import_sha256": "2ced0586208492f30df088c42868f6ed3278ae66105c2b4044ddd04df3bc5412"
+    },
+    {
+      "path": "tools/beacon10/handoff/stock-rpm-endpoint.h",
+      "import_sha256": "b1b00e01466d170fab1f81b2029801e97624ee7194ffd1fcc90aa13bea725d76"
+    },
+    {
+      "path": "tools/beacon10/handoff/stock-rpm-state.h",
+      "import_sha256": "7745254a8097f99479f4ec79a9394574e9462a147bddf6ef98b93c6d0c44a006"
+    },
+    {
+      "path": "tools/beacon10/handoff/storage-layout.h",
+      "import_sha256": "f4c314216ccb8d2294af04e7f4236b3575c2e8c136719f236af7b38f955f6f08"
+    },
+    {
+      "path": "tools/beacon10/handoff/storage.c",
+      "import_sha256": "49bc40fd2fe96f6673b02f7e618bf3dd2ea5f89096d6719c59dfd56eb756f2e8"
+    },
+    {
+      "path": "tools/beacon10/handoff/storage.h",
+      "import_sha256": "2fdb42b3fbc5b51f21fcfa565ca767ca84d46558ca7529215f45ec6c2b149da6"
+    },
+    {
+      "path": "tools/beacon10/handoff/trampoline.S",
+      "import_sha256": "364614631d18193e85b1867db5a90c4e9e7b8b7d620c6cc199f654ca01803c46"
+    }
+  ],
+  "note": "import_sha256 identifies the imported file before standalone-repository adaptations; use Git for final content.",
+  "test_sources_in_public_commit": false
+}

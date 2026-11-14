@@ -1,0 +1,45 @@
+/* SPDX-License-Identifier: GPL-2.0-only */
+/* Generated from tools/beacon10/layout.json; checked by storage-layout.py. */
+#ifndef B10_LAYOUT_GENERATED_H
+#define B10_LAYOUT_GENERATED_H
+struct b10_part { const char *name; uint64_t start, sectors; };
+static const struct b10_part b10_parts[37] = {
+  { "0:SBL1", 34ULL, 2048ULL },
+  { "0:SBL1_1", 2082ULL, 2048ULL },
+  { "0:BOOTCONFIG", 4130ULL, 512ULL },
+  { "0:BOOTCONFIG1", 4642ULL, 512ULL },
+  { "0:QSEE", 5154ULL, 3584ULL },
+  { "0:QSEE_1", 8738ULL, 3584ULL },
+  { "0:DEVCFG", 12322ULL, 512ULL },
+  { "0:DEVCFG_1", 12834ULL, 512ULL },
+  { "0:APDP", 13346ULL, 512ULL },
+  { "0:APDP_1", 13858ULL, 512ULL },
+  { "0:TME", 14370ULL, 1024ULL },
+  { "0:TME_1", 15394ULL, 1024ULL },
+  { "0:RPM", 16418ULL, 512ULL },
+  { "0:RPM_1", 16930ULL, 512ULL },
+  { "0:CDT", 17442ULL, 512ULL },
+  { "0:CDT_1", 17954ULL, 512ULL },
+  { "0:APPSBLENV", 18466ULL, 512ULL },
+  { "0:APPSBL", 18978ULL, 4096ULL },
+  { "0:APPSBL_1", 23074ULL, 4096ULL },
+  { "0:ART", 27170ULL, 1024ULL },
+  { "0:ETHPHYFW", 28194ULL, 1024ULL },
+  { "0:WIFIFW", 29218ULL, 10240ULL },
+  { "0:WIFIFW_1", 39458ULL, 10240ULL },
+  { "0:HLOS", 49698ULL, 20480ULL },
+  { "0:HLOS_1", 70178ULL, 20480ULL },
+  { "rootfs", 90658ULL, 16384ULL },
+  { "rootfs_1", 107042ULL, 16384ULL },
+  { "RI", 123426ULL, 2048ULL },
+  { "qsdk_kernel", 142384ULL, 65536ULL },
+  { "qsdk_rootfs", 207920ULL, 131072ULL },
+  { "beacon_guard31", 142378ULL, 2ULL },
+  { "beacon_guard32", 142380ULL, 2ULL },
+  { "0:APPSBLENV_1", 125474ULL, 512ULL },
+  { "beacon_guard34", 142382ULL, 2ULL },
+  { "mft_data", 125986ULL, 16392ULL },
+  { "rootfs_data", 338992ULL, 3445672ULL },
+  { "beacon_rescue", 3784664ULL, 32775ULL },
+};
+#endif

@@ -1,0 +1,485 @@
+{
+  "sector_bytes": 512,
+  "disk_sectors": 3817472,
+  "first_usable_lba": 34,
+  "last_usable_lba": 3817438,
+  "schema": 4,
+  "id": "stock-linux-v2",
+  "factory": [
+    {
+      "number": 1,
+      "name": "0:SBL1",
+      "start": 34,
+      "size": 2048
+    },
+    {
+      "number": 2,
+      "name": "0:SBL1_1",
+      "start": 2082,
+      "size": 2048
+    },
+    {
+      "number": 3,
+      "name": "0:BOOTCONFIG",
+      "start": 4130,
+      "size": 512
+    },
+    {
+      "number": 4,
+      "name": "0:BOOTCONFIG1",
+      "start": 4642,
+      "size": 512
+    },
+    {
+      "number": 5,
+      "name": "0:QSEE",
+      "start": 5154,
+      "size": 3584
+    },
+    {
+      "number": 6,
+      "name": "0:QSEE_1",
+      "start": 8738,
+      "size": 3584
+    },
+    {
+      "number": 7,
+      "name": "0:DEVCFG",
+      "start": 12322,
+      "size": 512
+    },
+    {
+      "number": 8,
+      "name": "0:DEVCFG_1",
+      "start": 12834,
+      "size": 512
+    },
+    {
+      "number": 9,
+      "name": "0:APDP",
+      "start": 13346,
+      "size": 512
+    },
+    {
+      "number": 10,
+      "name": "0:APDP_1",
+      "start": 13858,
+      "size": 512
+    },
+    {
+      "number": 11,
+      "name": "0:TME",
+      "start": 14370,
+      "size": 1024
+    },
+    {
+      "number": 12,
+      "name": "0:TME_1",
+      "start": 15394,
+      "size": 1024
+    },
+    {
+      "number": 13,
+      "name": "0:RPM",
+      "start": 16418,
+      "size": 512
+    },
+    {
+      "number": 14,
+      "name": "0:RPM_1",
+      "start": 16930,
+      "size": 512
+    },
+    {
+      "number": 15,
+      "name": "0:CDT",
+      "start": 17442,
+      "size": 512
+    },
+    {
+      "number": 16,
+      "name": "0:CDT_1",
+      "start": 17954,
+      "size": 512
+    },
+    {
+      "number": 17,
+      "name": "0:APPSBLENV",
+      "start": 18466,
+      "size": 512
+    },
+    {
+      "number": 18,
+      "name": "0:APPSBL",
+      "start": 18978,
+      "size": 4096
+    },
+    {
+      "number": 19,
+      "name": "0:APPSBL_1",
+      "start": 23074,
+      "size": 4096
+    },
+    {
+      "number": 20,
+      "name": "0:ART",
+      "start": 27170,
+      "size": 1024
+    },
+    {
+      "number": 21,
+      "name": "0:ETHPHYFW",
+      "start": 28194,
+      "size": 1024
+    },
+    {
+      "number": 22,
+      "name": "0:WIFIFW",
+      "start": 29218,
+      "size": 10240
+    },
+    {
+      "number": 23,
+      "name": "0:WIFIFW_1",
+      "start": 39458,
+      "size": 10240
+    },
+    {
+      "number": 24,
+      "name": "0:HLOS",
+      "start": 49698,
+      "size": 20480
+    },
+    {
+      "number": 25,
+      "name": "0:HLOS_1",
+      "start": 70178,
+      "size": 20480
+    },
+    {
+      "number": 26,
+      "name": "rootfs",
+      "start": 90658,
+      "size": 262144
+    },
+    {
+      "number": 27,
+      "name": "rootfs_1",
+      "start": 352802,
+      "size": 262144
+    },
+    {
+      "number": 28,
+      "name": "RI",
+      "start": 614946,
+      "size": 2048
+    },
+    {
+      "number": 29,
+      "name": "EXTFS",
+      "start": 616994,
+      "size": 12288
+    },
+    {
+      "number": 30,
+      "name": "log",
+      "start": 629282,
+      "size": 131072
+    },
+    {
+      "number": 31,
+      "name": "cfg",
+      "start": 760354,
+      "size": 131072
+    },
+    {
+      "number": 32,
+      "name": "cfg_1",
+      "start": 891426,
+      "size": 131072
+    },
+    {
+      "number": 33,
+      "name": "0:APPSBLENV_1",
+      "start": 1022498,
+      "size": 512
+    },
+    {
+      "number": 34,
+      "name": "opt",
+      "start": 1023010,
+      "size": 1032192
+    },
+    {
+      "number": 35,
+      "name": "mft_data",
+      "start": 2055202,
+      "size": 16392
+    }
+  ],
+  "preserved": [
+    {
+      "number": 1,
+      "name": "0:SBL1",
+      "start": 34,
+      "size": 2048
+    },
+    {
+      "number": 2,
+      "name": "0:SBL1_1",
+      "start": 2082,
+      "size": 2048
+    },
+    {
+      "number": 3,
+      "name": "0:BOOTCONFIG",
+      "start": 4130,
+      "size": 512
+    },
+    {
+      "number": 4,
+      "name": "0:BOOTCONFIG1",
+      "start": 4642,
+      "size": 512
+    },
+    {
+      "number": 5,
+      "name": "0:QSEE",
+      "start": 5154,
+      "size": 3584
+    },
+    {
+      "number": 6,
+      "name": "0:QSEE_1",
+      "start": 8738,
+      "size": 3584
+    },
+    {
+      "number": 7,
+      "name": "0:DEVCFG",
+      "start": 12322,
+      "size": 512
+    },
+    {
+      "number": 8,
+      "name": "0:DEVCFG_1",
+      "start": 12834,
+      "size": 512
+    },
+    {
+      "number": 9,
+      "name": "0:APDP",
+      "start": 13346,
+      "size": 512
+    },
+    {
+      "number": 10,
+      "name": "0:APDP_1",
+      "start": 13858,
+      "size": 512
+    },
+    {
+      "number": 11,
+      "name": "0:TME",
+      "start": 14370,
+      "size": 1024
+    },
+    {
+      "number": 12,
+      "name": "0:TME_1",
+      "start": 15394,
+      "size": 1024
+    },
+    {
+      "number": 13,
+      "name": "0:RPM",
+      "start": 16418,
+      "size": 512
+    },
+    {
+      "number": 14,
+      "name": "0:RPM_1",
+      "start": 16930,
+      "size": 512
+    },
+    {
+      "number": 15,
+      "name": "0:CDT",
+      "start": 17442,
+      "size": 512
+    },
+    {
+      "number": 16,
+      "name": "0:CDT_1",
+      "start": 17954,
+      "size": 512
+    },
+    {
+      "number": 17,
+      "name": "0:APPSBLENV",
+      "start": 18466,
+      "size": 512
+    },
+    {
+      "number": 18,
+      "name": "0:APPSBL",
+      "start": 18978,
+      "size": 4096
+    },
+    {
+      "number": 19,
+      "name": "0:APPSBL_1",
+      "start": 23074,
+      "size": 4096
+    },
+    {
+      "number": 20,
+      "name": "0:ART",
+      "start": 27170,
+      "size": 1024
+    },
+    {
+      "number": 21,
+      "name": "0:ETHPHYFW",
+      "start": 28194,
+      "size": 1024
+    },
+    {
+      "number": 22,
+      "name": "0:WIFIFW",
+      "start": 29218,
+      "size": 10240
+    },
+    {
+      "number": 23,
+      "name": "0:WIFIFW_1",
+      "start": 39458,
+      "size": 10240
+    },
+    {
+      "number": 24,
+      "name": "0:HLOS",
+      "start": 49698,
+      "size": 20480
+    },
+    {
+      "number": 25,
+      "name": "0:HLOS_1",
+      "start": 70178,
+      "size": 20480
+    }
+  ],
+  "relocated": [
+    {
+      "number": 28,
+      "name": "RI",
+      "start": 123426,
+      "size": 2048,
+      "source_start": 614946
+    },
+    {
+      "number": 33,
+      "name": "0:APPSBLENV_1",
+      "start": 125474,
+      "size": 512,
+      "source_start": 1022498
+    },
+    {
+      "number": 35,
+      "name": "mft_data",
+      "start": 125986,
+      "size": 16392,
+      "source_start": 2055202
+    }
+  ],
+  "volumes": [
+    {
+      "number": 29,
+      "name": "qsdk_kernel",
+      "start": 142384,
+      "size": 65536
+    },
+    {
+      "number": 30,
+      "name": "qsdk_rootfs",
+      "start": 207920,
+      "size": 131072
+    },
+    {
+      "number": 31,
+      "name": "beacon_guard31",
+      "start": 142378,
+      "size": 2
+    },
+    {
+      "number": 32,
+      "name": "beacon_guard32",
+      "start": 142380,
+      "size": 2
+    },
+    {
+      "number": 34,
+      "name": "beacon_guard34",
+      "start": 142382,
+      "size": 2
+    },
+    {
+      "number": 36,
+      "name": "rootfs_data",
+      "start": 338992,
+      "size": 3445672
+    },
+    {
+      "number": 37,
+      "name": "beacon_rescue",
+      "start": 3784664,
+      "size": 32775
+    }
+  ],
+  "capsule": {
+    "start": 3784664,
+    "size": 32775,
+    "bootstrap_snapshot_max_bytes": 6291456,
+    "purpose": "identity/GPT snapshot, bounded bootstrap snapshot and boot-attempt journal; not a U-Boot FIT"
+  },
+  "resized": [
+    {
+      "number": 26,
+      "name": "rootfs",
+      "start": 90658,
+      "size": 16384,
+      "source_start": 90658,
+      "source_size": 262144
+    },
+    {
+      "number": 27,
+      "name": "rootfs_1",
+      "start": 107042,
+      "size": 16384,
+      "source_start": 352802,
+      "source_size": 262144
+    }
+  ],
+  "bootstrap": {
+    "slot_numbers": [
+      26,
+      27
+    ],
+    "slot_bytes": 8388608,
+    "squashfs_image_max_bytes": 6291456,
+    "stock_hlos_partitions_preserved": [
+      24,
+      25
+    ],
+    "bootcmd_changed": false,
+    "preserve_environment_bytes_during_relocation": true,
+    "boot_success_counter_ack_required": true,
+    "boot_success_counter_ack_implemented": true,
+    "normal_bootcmd": "bootipq",
+    "hardware_validated": false,
+    "runtime_handoff_implemented": true,
+    "migration_installer_implemented": true,
+    "module_staging_hardware_validated": true
+  },
+  "handoff_protocol": "stock-linux-v1"
+}

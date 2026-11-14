@@ -1,0 +1,19 @@
+name: build-sender-tools
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential python3 gcc-aarch64-linux-gnu \
+            binutils-aarch64-linux-gnu libc6-dev-arm64-cross
+      - name: Compile public userspace tools and check layout constants
+        run: make host-tools arm64-tools check-layout
+      - name: Assemble the public ARM64 trampoline
+        run: aarch64-linux-gnu-gcc -c tools/beacon10/handoff/trampoline.S -o build/trampoline.o
